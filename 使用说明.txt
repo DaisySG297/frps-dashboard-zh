@@ -1,0 +1,46 @@
+========================================
+ frps 官方面板中文汉化包
+ 适用版本：frp v0.71.0
+========================================
+
+【这是啥】
+给 frp 服务端（frps）自带的英文管理面板换成中文界面。
+
+【文件清单】
+  使用说明.txt          ← 本文件
+  static\index.html     ← 面板入口页
+  static\index-*.js     ← 汉化后的主程序
+  static\index-*.css    ← 样式表
+  hanlify_patch.py      ← 汉化补丁脚本（进阶用户用，可跳过）
+
+【三步安装】
+  1. 把整个 static 文件夹复制到 frps 所在电脑上，
+     放哪都行，比如放到 frps 程序旁边：
+        C:\frp\dashboard-zh\          （Windows）
+        /etc/frp/dashboard-zh/        （Linux）
+
+  2. 用记事本打开 frps 的配置文件 frps.toml，
+     加上这一行（路径改成你刚放的位置）：
+
+     webServer.assetsDir = "C:\frp\dashboard-zh"
+
+     （Linux 写法：webServer.assetsDir = "/etc/frp/dashboard-zh"）
+
+  3. 重启 frps，浏览器打开面板页面，
+     按 Ctrl+F5 强制刷新一次，界面就是中文了。
+
+【想换回英文？】
+  把 frps.toml 里 webServer.assetsDir 那行删掉，
+  重启 frps 即可恢复官方原版。
+
+【常见问题】
+  Q：刷新后还是英文？
+  A：浏览器缓存了旧文件，按 Ctrl+F5 强制刷新即可。
+
+  Q：frp 升级后面板变回英文/打不开了？
+  A：本汉化包只对应 frp v0.71.0。frp 升级后请到本仓库
+     看有没有新版，或用 hanlify_patch.py 重新生成。
+
+  Q：安全吗？
+  A：汉化只替换了界面显示的文字（字符串），没有改动任何
+     功能逻辑，也不会联网上传任何数据。
