@@ -36,7 +36,7 @@ frp **v0.71.0** 官方服务端面板（dashboard）的**完整中文汉化静�
 | `static/index-BTokoqTQ.js` | 汉化后的主程序（对应 frp v0.71.0 官方构建） |
 | `static/index-60N7C6S6.css` | 样式表（未修改） |
 | `hanlify_patch.py` | 通用汉化补丁脚本：`python hanlify_patch.py <面板目录>`，对从面板下载的官方 JS 应用全部人工补充替换规则 |
-| `使用说明.txt` | 小白友好版安装说明（也包含在 Release 压缩包里） |
+| `使用说明.txt` | 简明安装说明（也包含在 Release 压缩包里） |
 
 ## 注意事项
 
