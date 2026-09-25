@@ -42,6 +42,8 @@ REPLACEMENTS = [
     ('`In: ${', '`流入: ${'),
     ('`Out: ${', '`流出: ${'),
     # --- 加载 / 搜索 / 空状态 ---
+    ('" No active proxies "', '" 暂无在线代理 "'),
+    ('"Server"', '"服务端"'),
     ('"Loading..."', '"加载中..."'),
     ('"Search proxies..."', '"搜索代理..."'),
     ('placeholder:"Search clients..."', 'placeholder:"搜索客户端..."'),
