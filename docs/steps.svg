@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="250" viewBox="0 0 1180 250" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+  <rect width="1180" height="250" rx="16" fill="#f0f9ff"/>
+
+  <g font-size="17" font-weight="600" text-anchor="middle">
+    <g>
+      <rect x="30" y="55" width="330" height="130" rx="14" fill="#ffffff" stroke="#7dd3fc" stroke-width="2"/>
+      <text x="195" y="92" font-size="28">📁</text>
+      <text x="195" y="124" fill="#0c4a6e">① 复制汉化资源</text>
+      <text x="195" y="150" fill="#5f7f96" font-size="13" font-weight="400" font-family="Consolas,monospace">static/ → /etc/frp/dashboard-zh/</text>
+      <text x="195" y="170" fill="#5f7f96" font-size="12.5" font-weight="400">Windows / Linux 任意目录均可</text>
+    </g>
+    <g>
+      <rect x="425" y="55" width="330" height="130" rx="14" fill="#ffffff" stroke="#7dd3fc" stroke-width="2"/>
+      <text x="590" y="92" font-size="28">📝</text>
+      <text x="590" y="124" fill="#0c4a6e">② 修改 frps.toml</text>
+      <text x="590" y="150" fill="#5f7f96" font-size="13" font-weight="400" font-family="Consolas,monospace">webServer.assetsDir = "…"</text>
+      <text x="590" y="170" fill="#5f7f96" font-size="12.5" font-weight="400">一行配置，指向资源目录</text>
+    </g>
+    <g>
+      <rect x="820" y="55" width="330" height="130" rx="14" fill="#0c4a6e"/>
+      <text x="985" y="92" font-size="28">🎉</text>
+      <text x="985" y="124" fill="#ffffff">③ 重启 frps</text>
+      <text x="985" y="150" fill="#bae6fd" font-size="13" font-weight="400">浏览器按 Ctrl+F5 强制刷新</text>
+      <text x="985" y="170" fill="#bae6fd" font-size="12.5" font-weight="400">面板界面变中文</text>
+    </g>
+  </g>
+
+  <g stroke="#38bdf8" stroke-width="2.5" fill="none">
+    <line x1="362" y1="120" x2="419" y2="120" marker-end="url(#arr)"/>
+    <line x1="757" y1="120" x2="814" y2="120" marker-end="url(#arr)"/>
+  </g>
+
+  <text x="590" y="228" text-anchor="middle" fill="#0369a1" font-size="13">想换回英文？删掉 assetsDir 这行重启 frps 即可恢复官方原版，零残留</text>
+</svg>
