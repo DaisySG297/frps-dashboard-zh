@@ -10,6 +10,7 @@
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=flat-square)
 ![Stars](https://img.shields.io/github/stars/DaisySG297/frps-dashboard-zh?style=flat-square&color=facc15)
 ![零依赖](https://img.shields.io/badge/%E9%9B%B6%E4%BE%B5%E5%85%A5-%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90-10b981?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)
 
 </div>
 
